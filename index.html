@@ -95,6 +95,10 @@
                       </div>
 
                       <div class="map-info">
+                        <p>
+                          <strong>IP: </strong>
+                          <a id="server-ip" href="#" onclick="connectToServer('213.133.99.206:26015')">213.133.99.206:26015</a>
+                        </p>
                         <p><strong>Map:</strong> <span id="map-name">Loading...</span></p>
                         <p><strong>Players:</strong> <span id="current-players">0</span>/<span
                             id="max-players">20</span></p>
@@ -118,6 +122,11 @@
                       </tr>
                     </tbody>
                   </table>
+                  <div id="players-pagination">
+                    <button id="prev-page" disabled>Previous</button>
+                    <span id="page-info">Page 1 of 1</span>
+                    <button id="next-page" disabled>Next</button>
+                  </div>
                 </div>
               </div>
             </li>
@@ -197,7 +206,9 @@
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="assets/js/functions-min.js"></script>
   <script src="assets/js/serverinfo.js"></script>
+  <script src="assets/js/steamid.js"></script>
   <script src="assets/js/gungamestats.js"></script>
+  <script src="assets/js/connserver.js"></script>
 
 </body>
 
