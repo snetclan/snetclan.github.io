@@ -946,6 +946,10 @@ body {
     text-align: center
 }
 
+.work h3 {
+    text-align: center
+}
+
 .work--lockup {
     position: relative
 }
@@ -1158,11 +1162,14 @@ body {
     margin: 0 auto;
 }
 
-
 @media (max-width: 1180px) {
     .about {
         max-width: 100%
     }
+}
+
+.about h2 {
+    text-align: center
 }
 
 .about--banner {
@@ -2020,3 +2027,45 @@ body {
     visibility: visible;
     /* Show the tooltip when hovering */
 }
+
+table {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #444; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1a1a1a; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #262626;
+}
+
+td[colspan="3"] {
+    font-style: italic;
+    color: #888;
+}
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  #pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
