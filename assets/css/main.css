@@ -907,10 +907,22 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;  /* Ensures content does not spill out */
+}
+
+.work-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/test.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    opacity: 50%;
+    z-index: -1;
 }
 
 .work {
@@ -1135,12 +1147,23 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url("../img/contact-visual.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;  /* Ensures content does not spill out */
 }
 
+.about-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/test2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    z-index: -1;
+}
 .about {
     position: relative;
     display: -webkit-box;
