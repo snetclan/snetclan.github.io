@@ -903,6 +903,16 @@ body {
     }
 }
 
+.work-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/test.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .work {
     position: relative;
     display: -webkit-box;
@@ -1117,6 +1127,16 @@ body {
     }
 }
 
+.about-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/contact-visual.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .about {
     position: relative;
     display: -webkit-box;
@@ -1135,8 +1155,9 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 0 auto
+    margin: 0 auto;
 }
+
 
 @media (max-width: 1180px) {
     .about {
@@ -1243,7 +1264,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    list-style: none
+    list-style: none;
 }
 
 .about--options>a {
