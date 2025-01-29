@@ -2016,7 +2016,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
 
@@ -2084,7 +2084,7 @@ body {
 table {
     width: 80%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 5px auto;
     border-collapse: collapse; 
     font-family: 'Courier New', Courier, monospace;
 }
@@ -2123,12 +2123,29 @@ td[colspan="3"] {
     cursor: not-allowed;
   }
 
+#players-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#players-pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#players-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .divider {
     height: 1px;
     width: 80%;
     margin: 20px auto;
     background-color: #3f3f3f; 
     margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .server-header {

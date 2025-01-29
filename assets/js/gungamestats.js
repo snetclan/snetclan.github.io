@@ -44,6 +44,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Function to convert SteamID to SteamID64 using the provided SteamID parser
+    function convertToSteamID64(steamID) {
+        const parsedSteamID = SteamID.Parse(steamID);
+        if (parsedSteamID) {
+            return parsedSteamID.Format(SteamID.Format.STEAMID64);
+        }
+        return null; // Return null if the SteamID is invalid
+    }
+
     // Render the players for the current page
     function renderPage(page) {
         const tbody = document.querySelector("#rankingTable tbody");
@@ -55,12 +64,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         playersToDisplay.forEach((player, index) => {
             const row = document.createElement("tr");
+            const steamID64 = convertToSteamID64(player.id);
+            const profileLink = steamID64 ? `https://steamcommunity.com/profiles/${steamID64}` : "#";
+
             row.innerHTML = `
                 <td>${start + index + 1}</td>
                 <td class="name-tooltip" data-steamid="${player.id}">${player.name}</td>
                 <td>${player.gungameWins}</td>
                 <td>${player.score}</td>
             `;
+
+            // Make the row clickable if the SteamID64 is valid
+            if (steamID64) {
+                row.style.cursor = "pointer";
+                row.addEventListener("click", () => {
+                    window.open(profileLink, "_blank");
+                });
+            }
+
             tbody.appendChild(row);
         });
     }
