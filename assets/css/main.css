@@ -1987,40 +1987,70 @@ body {
 .game-info {
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
-    /* Horizontally center the items */
+    text-align: center;
 }
 
-/* Style for the game icon image */
+.game-details {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;  
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.map-container {
+    flex-shrink: 0;
+}
+
+.map-image {
+    width: 200px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6); 
+}
+
+.map-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 8%;
+}
+
+
+.map-info p {
+    margin: 5px 0; 
+}
+
 .game-icon {
     width: 70px;
-    /* Adjust the size of the icon */
     height: 70px;
     margin-bottom: 15px;
-    /* Space between the icon and the text */
     border-radius: 5px;
     object-fit: cover;
-    /* Ensures the icon fits within the box */
 }
 
-/* Styling for the details text */
-.game-details {
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-/* Styling for each paragraph within game-details */
-.game-details p {
-    margin: 5px 0;
-}
-
-/* Styling for the game server name */
+/* Styling for the server name */
 .game-details h3 {
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
 }
+
+/* Responsive Fix - Stack items vertically on smaller screens */
+@media (max-width: 600px) {
+    .game-details {
+        flex-direction: column;  
+        text-align: center;
+    }
+
+    .map-info {
+        text-align: center; /* Center text for small screens */
+    }
+}
+
 
 .name-tooltip {
     position: relative;
@@ -2091,4 +2121,30 @@ td[colspan="3"] {
   #pagination button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+
+.divider {
+    height: 1px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #3f3f3f; 
+    margin-top: 30px;
+  }
+
+  .server-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    margin-bottom: 20px; /* Optional: Adds spacing below the header */
+  }
+  
+  .server-header img {
+    margin-right: 10px;
+    width: 40px; /* Adjust the size of the image */
+    height: 40px; /* Adjust the size of the image */
+  }
+  
+  .server-header span {
+    font-size: 1.5em;
+    font-weight: bold;
   }

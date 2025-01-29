@@ -81,22 +81,28 @@
             <li class="l-section section">
               <div class="work-wrapper">
                 <div class="work">
-                  <h2>Server Info</h2>
+                  <div class="server-header">
+                    <!-- Server Icon and Name -->
+                    <img id="game-icon" class="game-icon" alt="Game Icon">
+                    <span id="server-name">[SNET] GunGame NL | FastDL</span>
+                  </div>
+
                   <div class="game-info">
                     <!-- Dynamically populated server info -->
-                    <h4>
-                      <img id="game-icon" class="game-icon" alt="Game Icon">
-                      <span id="server-name">Loading...</span>
-                    </h4>
                     <div class="game-details">
-                      <p><strong>Map:</strong> <span id="map-name">Loading...</span></p>
-                      <p><strong>Players:</strong> <span id="current-players">0</span>/<span id="max-players">20</span>
-                      </p>
-                      <p><strong>Bots:</strong> <span id="bots">0</span></p>
+                      <div class="map-container">
+                        <img id="map-image" class="map-image" src="" alt="Map Image">
+                      </div>
+
+                      <div class="map-info">
+                        <p><strong>Map:</strong> <span id="map-name">Loading...</span></p>
+                        <p><strong>Players:</strong> <span id="current-players">0</span>/<span
+                            id="max-players">20</span></p>
+                      </div>
                     </div>
                   </div>
 
-                  <!-- Player List Table -->
+                  <div class="divider"></div>
                   <h3>Connected Players</h3>
                   <table>
                     <thead>
@@ -107,7 +113,6 @@
                       </tr>
                     </thead>
                     <tbody id="players-table-body">
-                      <!-- Player rows will be dynamically added here -->
                       <tr>
                         <td colspan="3" style="text-align: center;">Loading players...</td>
                       </tr>
