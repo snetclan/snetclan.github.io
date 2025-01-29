@@ -1935,33 +1935,67 @@ body {
 
 .game-info {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Horizontally center the items */
-  }
-  
-  /* Style for the game icon image */
-  .game-icon {
-    width: 70px; /* Adjust the size of the icon */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Horizontally center the items */
+}
+
+/* Style for the game icon image */
+.game-icon {
+    width: 70px;
+    /* Adjust the size of the icon */
     height: 70px;
-    margin-bottom: 15px; /* Space between the icon and the text */
+    margin-bottom: 15px;
+    /* Space between the icon and the text */
     border-radius: 5px;
-    object-fit: cover; /* Ensures the icon fits within the box */
-  }
-  
-  /* Styling for the details text */
-  .game-details {
+    object-fit: cover;
+    /* Ensures the icon fits within the box */
+}
+
+/* Styling for the details text */
+.game-details {
     font-family: Arial, sans-serif;
     color: #333;
-  }
-  
-  /* Styling for each paragraph within game-details */
-  .game-details p {
+}
+
+/* Styling for each paragraph within game-details */
+.game-details p {
     margin: 5px 0;
-  }
-  
-  /* Styling for the game server name */
-  .game-details h3 {
+}
+
+/* Styling for the game server name */
+.game-details h3 {
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
-  }
+}
+
+.name-tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.name-tooltip::after {
+    content: attr(data-steamid);
+    /* The content will be the SteamID */
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.name-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    /* Show the tooltip when hovering */
+}
