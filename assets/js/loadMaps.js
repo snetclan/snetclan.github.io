@@ -30,7 +30,9 @@ const maps = [
     mapsWrapper.innerHTML = ''; // Clear current images
   
     mapsToDisplay.forEach(map => {
-      const imgSrc = `${imagesPath}${map}.jpg`;
+      // Normalize map name to lowercase for the image source
+      const normalizedMapName = map.toLowerCase();
+      const imgSrc = `${imagesPath}${normalizedMapName}.jpg`;
   
       const img = new Image();
       img.src = imgSrc;
@@ -50,7 +52,7 @@ const maps = [
     });
   
     updatePagination(page);
-  }
+  }  
   
   function updatePagination(page) {
     const totalPages = Math.ceil(maps.length / itemsPerPage);

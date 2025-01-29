@@ -2085,6 +2085,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -2099,6 +2100,7 @@ body {
 
 .map-info p {
     margin: 5px 0; 
+    font-size: 16px;
 }
 
 .game-icon {
