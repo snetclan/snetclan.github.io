@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let players = [];
-    const rowsPerPage = 10;
+    const rowsPerPage = 20;
     let currentPage = 1;
 
     // Function to normalize SteamIDs by removing trailing null characters

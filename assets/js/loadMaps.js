@@ -18,12 +18,12 @@ const maps = [
 const imagesPath = 'assets/img/maps/';
 const noMapImage = 'no_map.jpg';
 
-let currentPage = 1;
-const itemsPerPage = 9; // 3x3 grid
+let currentPageMaps = 1;
+const itemsPerPageMaps = 9; // 3x3 grid
 
 function loadMaps(page) {
-  const start = (page - 1) * itemsPerPage;
-  const end = page * itemsPerPage;
+  const start = (page - 1) * itemsPerPageMaps;
+  const end = page * itemsPerPageMaps;
   const mapsToDisplay = maps.slice(start, end);
 
   const mapsWrapper = document.getElementById('maps-pagination');
@@ -55,7 +55,7 @@ function loadMaps(page) {
 }  
 
 function updatePagination(page) {
-  const totalPages = Math.ceil(maps.length / itemsPerPage);
+  const totalPages = Math.ceil(maps.length / itemsPerPageMaps);
   const paginationDiv = document.getElementById('map-navigation');
   paginationDiv.innerHTML = ''; // Clear previous pagination
 
@@ -100,4 +100,4 @@ function updatePagination(page) {
   }
 }
 
-loadMaps(currentPage);
+loadMaps(currentPageMaps);
