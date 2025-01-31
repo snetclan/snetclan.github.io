@@ -1613,16 +1613,26 @@ body {
     text-align: center
 }
 
-.steam-profiles {
+.contact-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
-    /* Adjust the gap between profiles */
-    margin-top: 20px;
+    align-items: flex-start;
+    gap: 100px; /* Adjust the spacing between the Discord widget and Steam profiles */
     flex-wrap: wrap;
-    /* Allow profiles to wrap on smaller screens */
+    margin-top: 20px;
 }
+
+.discord-widget {
+    flex-shrink: 0; /* Prevents resizing */
+}
+
+.steam-profiles {
+    display: flex;
+    flex-direction: column; /* Stack profiles vertically */
+    align-items: center;
+    gap: 20px;
+}
+
 
 .profile {
     text-align: center;
@@ -2343,3 +2353,12 @@ td[colspan="6"] {
 .ban h2 {
     text-align: center
 }
+
+.ban-appeal-text {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc; /* Adjust color as needed */
+    margin-bottom: 1px;
+    font-style: italic;
+}
+
