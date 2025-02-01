@@ -95,24 +95,44 @@
 
                   <div class="divider"></div>
                   <h3>Connected Players</h3>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Score</th>
-                        <th>Duration</th>
-                      </tr>
-                    </thead>
-                    <tbody id="players-table-body">
-                      <tr>
-                        <td colspan="3" style="text-align: center;">Loading players...</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div id="players-pagination">
-                    <button id="prev-page" disabled>Previous</button>
-                    <span id="page-info">Page 1 of 1</span>
-                    <button id="next-page" disabled>Next</button>
+                  <div class="players-container">
+                    <div>
+                      <h3 style="color: red;">Terrorists</h3>
+                      <table class="players-table terrorists-table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Kills</th>
+                            <th>Deaths</th>
+                            <th>K/D</th>
+                          </tr>
+                        </thead>
+                        <tbody id="t-players-table-body">
+                          <tr>
+                            <td colspan="4" style="text-align: center;">Loading players...</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div>
+                      <h3 style="color: blue;">Counter-Terrorists</h3>
+                      <table class="players-table ct-table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Kills</th>
+                            <th>Deaths</th>
+                            <th>K/D</th>
+                          </tr>
+                        </thead>
+                        <tbody id="ct-players-table-body">
+                          <tr>
+                            <td colspan="4" style="text-align: center;">Loading players...</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -136,7 +156,6 @@
                     <tbody>
                     </tbody>
                   </table>
-                  <div id="pagination"></div>
                 </div>
               </div>
             </li>
