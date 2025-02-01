@@ -506,7 +506,13 @@ body {
     -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
-    color: #fff
+    color: #fff;
+}
+
+.header--logo img {
+    border-radius: 20px;
+    width: 32px;
+    height: 32px;
 }
 
 .header--logo p {
