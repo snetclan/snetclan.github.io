@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
       tPlayersTableBody.innerHTML = '';
       ctPlayersTableBody.innerHTML = '';
 
-      // Sort players by score (kills) in descending order
       const terrorists = playersData.filter(player => player.team === 1).sort((a, b) => b.score - a.score);
       const cts = playersData.filter(player => player.team === 2).sort((a, b) => b.score - a.score);
 
@@ -59,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
   })
   .then(response => response.json())
   .then(data => {
-      // **Update Map Info**
       let mapName = data.map || 'Unknown Map';
       let formattedMapName = mapName.replace(/\s+/g, '_').toLowerCase();
       const mapImage = document.getElementById('map-image');
@@ -78,15 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
       mapImage.alt = mapName;
       document.getElementById('map-name').textContent = mapName;
 
-      // **Update Player Count**
       document.getElementById('current-players').textContent = data.players.length || 0;
       document.getElementById('max-players').textContent = data.max_players || 20;
 
-      // **Update Game Icon**
       const iconUrl = 'https://static.wikia.nocookie.net/cswikia/images/0/0d/Condition-Zero.png';
       document.getElementById('game-icon').src = iconUrl;
 
-      // **Update Players**
       playersData = data.players || [];
       renderPlayers();
   })
