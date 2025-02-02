@@ -2363,8 +2363,43 @@ td[colspan="6"] {
 .ban-appeal-text {
     text-align: center;
     font-size: 14px;
-    color: #ccc; /* Adjust color as needed */
+    color: #ccc;
     margin-bottom: 1px;
     font-style: italic;
+}
+
+.players-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.players-table {
+    width: 45%;
+    border-collapse: collapse;
+}
+
+.players-table th, .players-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.terrorists-table {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: red;
+}
+
+.ct-table {
+    background-color: rgba(0, 0, 255, 0.1);
+    color: blue;
+}
+
+.players-table th {
+    background-color: #222;
+    color: white;
+}
+
+.players-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
