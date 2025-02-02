@@ -2363,11 +2363,10 @@ td[colspan="6"] {
 .ban-appeal-text {
     text-align: center;
     font-size: 14px;
-    color: #ccc; /* Adjust color as needed */
+    color: #ccc;
     margin-bottom: 1px;
     font-style: italic;
 }
-
 
 .players-container {
     display: flex;
