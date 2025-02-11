@@ -7,7 +7,7 @@ const maps = [
     "de_sediment", "de_sienna_cz", "de_spay", "de_stadium_cz", "de_stargate_rats_csz", "de_tmar_cz", "de_trainyard_cz", 
     "de_truth_cz", "dm_arctic", "dm_desolation_final", "dm_farero_cso", "dm_insularity", "dm_snowfall", "dm_zerstoeren_3", 
     "fy_buzzkill", "fy_buzzwood", "fy_comicbdust_cz", "fy_deck16_cz", "fy_dust17", "fy_kvayked", "fy_nemesis_world", 
-    "fy_pool_day3", "fy_snow2", "fy_snow2016", "fy_snow_dew", "fy_snow_dino", "fy_snow_fg2", "fy_snowoot_cz", "fy_waterland_cz", 
+    "fy_pool_day3", "fy_snow2", "fy_snow_2016", "fy_snow_dew", "fy_snow_dino", "fy_snow_fg2", "fy_snowoot_cz", "fy_waterland_cz", 
     "gg_2minaretz", "gg_33_frisson", "gg_33_mario", "gg_$3000$_b5", "gg_aim_paranoia", "gg_arabia_mz", "gg_arena_future", 
     "gg_arenatexture_mt", "gg_azteca_harith", "gg_basicsand", "gg_bside_paintball", "gg_ctown", "gg_darkstar_new", "gg_death-arena_cs16", 
     "gg_dust_2_vk", "gg_dust_bigger", "gg_dustwars", "gg_egypt_ng", "gg_elevated", "gg_empty_map", "gg_extreamcss", "gg_fabrica_v1", 
