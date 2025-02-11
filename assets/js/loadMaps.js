@@ -15,8 +15,7 @@ const maps = [
     "gg_mansion_room", "gg_mariocastle_mt", "gg_mini_cbble", "gg_mini_dust2_rmk", "gg_mini_inferno", "gg_mini_shrine", "gg_mini_dust2_rmk", 
     "gg_mini_shrine", "gg_mini_inferno", "gg_mini_cbble", "gg_park", "gg_pool_spacex", "gg_scoutzknives_buzzkill", "gg_snow3", 
     "gg_snow_dino_rmx", "gg_snow_zona", "gg_snowpool", "gg_speedcastle2", "gg_speedy", "gg_sys_mini_mario", "gg_westwood_mini", "portacabab002", 
-    "snet_arena", "snet_paintball", "war3dm_snow"
-];
+    "snet_arena", "snet_paintball", "war3dm_snow" ];
 
 const imagesPath = 'assets/img/maps/';
 const noMapImage = 'no_map.jpg';
