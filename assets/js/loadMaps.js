@@ -12,8 +12,8 @@ const maps = [
     "gg_arenatexture_mt", "gg_azteca_harith", "gg_basicsand", "gg_bside_paintball", "gg_ctown", "gg_darkstar_new", "gg_death-arena_cs16", 
     "gg_dust_2_vk", "gg_dust_bigger", "gg_dustwars", "gg_egypt_ng", "gg_elevated", "gg_empty_map", "gg_extreamcss", "gg_fabrica_v1", 
     "gg_flatiron", "gg_hideout", "gg_inferno", "gg_italy2_iplay", "gg_jaguar_cspgames", "gg_js_object", "gg_klobbs_iceworld", "gg_legend", 
-    "gg_mansion_room", "gg_mariocastle_mt", "gg_mini_cbble", "gg_mini_dust2_rmk", "gg_mini_inferno", "gg_mini_shrine", "gg_mini_dust2_rmk", 
-    "gg_mini_shrine", "gg_mini_inferno", "gg_mini_cbble", "gg_park", "gg_pool_spacex", "gg_scoutzknives_buzzkill", "gg_snow3", 
+    "gg_mansion_room", "gg_mariocastle_mt", "gg_mini_inferno", "gg_mini_shrine", "gg_mini_dust2_rmk", 
+    "gg_mini_cbble", "gg_park", "gg_pool_spacex", "gg_scoutzknives_buzzkill", "gg_snow3", 
     "gg_snow_dino_rmx", "gg_snow_zona", "gg_snowpool", "gg_speedcastle2", "gg_speedy", "gg_sys_mini_mario", "gg_westwood_mini", "portacabab002", 
     "snet_arena", "snet_paintball", "war3dm_snow" ];
 
