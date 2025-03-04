@@ -13,7 +13,9 @@ const maps = [
     "gg_dust_2_vk", "gg_dust_bigger", "gg_dustwars", "gg_egypt_ng", "gg_elevated", "gg_empty_map", "gg_extreamcss", "gg_fabrica_v1", 
     "gg_flatiron", "gg_hideout", "gg_inferno", "gg_italy2_iplay", "gg_jaguar_cspgames", "gg_js_object", "gg_klobbs_iceworld", "gg_legend", 
     "gg_mansion_room", "gg_mariocastle_mt", "gg_mini_inferno", "gg_mini_shrine", "gg_mini_dust2_rmk", 
-    "gg_mini_cbble", "gg_park", "gg_pool_spacex", "gg_scoutzknives_buzzkill", "gg_snow3", 
+    "gg_mini_cbble", "gg_park", "gg_pool_spacex", "gg_scoutzknives_buzzkill", "gg_snow3", "35hp_aware","35hp_dust_2017","828_arena_03","828_arena_05","828_arena_08",
+    "828_dust2","828_pk_15","828_pk_21","828_sm_01","828_sm_02","828_sm_03","828_sm_08","828_sm_11","aim_ak-colt_pool2_t0ms","aim_deagle_snow_as","aim_dust04_as","ar_snw",
+    "arcadia","awp_4one_fresh_b3","aztec_bridge_cz","css_bycadust_as","css_deagle_as","css_india2_as","css_vietnam","de_anal","de_ankara","de_bank_csgo",
     "gg_snow_dino_rmx", "gg_snow_zona", "gg_snowpool", "gg_speedcastle2", "gg_speedy", "gg_sys_mini_mario", "gg_westwood_mini", "portacabab002", 
     "snet_arena", "snet_paintball", "war3dm_snow" ];
 
