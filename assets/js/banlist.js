@@ -16,29 +16,26 @@ function parseBanlist(data) {
         const line = lines[i].trim();
         if (!line) continue; // Skip empty lines
 
-        // Split the line by quotes and filter out empty strings
+        // Split the line by quotes to correctly handle parts with spaces
         const parts = line.split('"').filter(p => p.trim() !== '');
 
         // Ensure the line has the correct number of parts
-        if (parts.length < 7) continue;
+        if (parts.length < 6) continue;
 
-        const steamID = parts[0]; // SteamID or IP
-        const playerName = parts[1]; // Player name
+        const steamID = parts[0].trim(); // SteamID or IP
+        const playerName = parts[1].trim(); // Player name
         const banLength = parseInt(parts[2].trim(), 10); // Ban length in minutes
-        let unbanTime = parts[3]; // Unban time (e.g., "10:30:00 12/25/2023")
-        const reason = parts[4]; // Reason for the ban
-        const adminName = parts[5]; // Admin name
-        const adminSteamID = parts[6]; // Admin SteamID
+        const reason = parts[4].trim(); // Reason for the ban
+        const adminName = parts[5].trim() === "[SNET] GunGame NL | FastDL | SNETClan.com" ? "Console" : parts[5].trim(); // Admin name
 
         // Format unban time
-        if (banLength === 0) {
-            unbanTime = "Never";
-        } else {
-            unbanTime = formatUnbanTime(unbanTime);
+        let unbanTime = "Never"; // Default to "Never" for permanent bans
+        if (banLength !== 0 && !isNaN(banLength)) {
+            unbanTime = formatUnbanTime(parts[3].trim());
         }
 
         // Calculate ban length description
-        let banLengthDesc = banLength === 0 ? "Permanent" : `${banLength} minutes`;
+        let banLengthDesc = isNaN(banLength) || banLength === 0 ? "Permanent" : `${banLength} minutes`;
 
         // Add the ban to the list
         bans.push({
@@ -48,7 +45,6 @@ function parseBanlist(data) {
             unbanTime,
             reason,
             adminName,
-            adminSteamID
         });
     }
 
