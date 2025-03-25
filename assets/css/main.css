@@ -2108,8 +2108,8 @@ body {
 }
 
 .map-image {
-    width: 200px;
-    height: 125px;
+    width: 240px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.6);
