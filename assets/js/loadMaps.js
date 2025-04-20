@@ -9,7 +9,7 @@ const maps = [
     "fy_buzzkill", "fy_buzzwood", "fy_comicbdust_cz", "fy_deck16_cz", "fy_dust17", "fy_kvayked", "fy_nemesis_world", 
     "aim_vermond_sn", "de_dust_pod_sn", "dm_origami_sn", "fy_dust_aim", "gg_pool_suite", "gg_rapidfire", "de_chateau_cz", "de_cod_stalingrad", "de_halla",
     "fy_pool_day3", "fy_snow2", "fy_snow_2016", "fy_snow_dew", "fy_snow_dino", "fy_snow_fg2", "fy_snowoot_cz", "fy_waterland_cz", 
-    "gg_anubis", "gg_cz", "sp_trash_metal" "gg_2minaretz", "gg_33_frisson", "gg_33_mario", "gg_$3000$_b5", "gg_aim_paranoia", "gg_arabia_mz", "gg_arena_future", 
+    "gg_anubis", "gg_cz", "sp_trash_metal", "gg_2minaretz", "gg_33_frisson", "gg_33_mario", "gg_$3000$_b5", "gg_aim_paranoia", "gg_arabia_mz", "gg_arena_future", 
     "gg_arenatexture_mt", "gg_azteca_harith", "gg_basicsand", "gg_bside_paintball", "gg_ctown", "gg_darkstar_new", "gg_death-arena_cs16", 
     "gg_dust_2_vk", "gg_dust_bigger", "gg_dustwars", "gg_egypt_ng", "gg_elevated", "gg_empty_map", "gg_extreamcss", "gg_fabrica_v1", 
     "gg_flatiron", "gg_hideout", "gg_inferno", "gg_italy2_iplay", "gg_jaguar_cspgames", "gg_js_object", "gg_klobbs_iceworld", "gg_legend", 
