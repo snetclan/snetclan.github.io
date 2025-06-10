@@ -1,12 +1,12 @@
 const maps = [
     "35hp_aware", "35hp_dust_2017", "828_arena_03", "828_arena_05", "828_arena_08", "828_dust2",
-    "828_pk_15", "828_sm_01", "828_sm_02", "828_sm_03", "828_sm_08", "828_sm_11", "SNET_Arena",
+    "828_pk_15", "828_sm_03", "828_sm_08", "828_sm_11", "SNET_Arena",
     "SNET_paintball", "Thi_Tran_Sinh_Tu", "aim_ak-colt_pool2_t0ms", "aim_deagle_snow_as",
     "aim_dust04_as", "aim_kanal", "aim_pool_paradise", "aim_vermond_sn", "arcadia",
-    "awp_4one_fresh_b3", "aztec_bridge_cz", "cs_1943_cz", "cs_havana_cz", "cs_norway_assault",
+    "awp_4one_fresh_b3", "aztec_bridge_cz",  "cs_havana_cz", "cs_norway_assault",
     "css_bycadust_as", "css_crane", "css_deagle_as", "css_dust", "css_dust2_remake", "css_dust3",
     "css_india2_as", "css_nuke_rarea", "css_train", "css_train_winter", "css_vietnam", "de_anal",
-    "de_ankara", "de_arkeo_cz", "de_bank_csgo", "de_barcelona", "de_byfly", "de_c4",
+    "de_arkeo_cz", "de_bank_csgo", "de_barcelona", "de_byfly", "de_c4",
     "de_catalane", "de_chateau_cz", "de_cod_stalingrad", "de_corruption_cz", "de_desert",
     "de_destino", "de_dockland", "de_dovitoff", "de_dryland", "de_dust2014_r2", "de_dust2_2015",
     "de_dust2_2020", "de_dust_castle", "de_dust_krystal578", "de_dust_pod_sn", "de_dustall",
@@ -17,7 +17,7 @@ const maps = [
     "dm_desolation_final", "dm_farero_cso", "dm_industry2", "dm_insularity", "dm_origami_sn", "dm_port", "dm_snowfall",
     "dm_snw", "dm_zerstoeren_3", "fy_buzzkill", "fy_buzzkill2", "fy_buzzwood", "fy_comicbdust_cz",
     "fy_deck16_cz", "fy_dust17", "fy_dust_aim", "fy_iceworld_xxl_sn", "fy_kvayked",
-    "fy_nemesis_world", "fy_pool_day3", "fy_sands", "fy_snow2", "fy_snow_2016",
+    "fy_nemesis_world", "fy_pool_day3", "fy_sands", "fy_snow_2016",
     "fy_snow_boom_blood_sn", "fy_snow_boom_sn", "fy_snow_dew", "fy_snow_dino", "fy_snow_fg",
     "fy_snowoot_cz", "fy_waterland_cz", "gg_$3000$_b5", "gg_2minaretz", "gg_33_frisson",
     "gg_33_mario", "gg_abandoned_town", "gg_aim_paranoia", "gg_anubis", "gg_arabia_mz",
@@ -28,11 +28,11 @@ const maps = [
     "gg_empty_map", "gg_extreamcss", "gg_fabrica_v1", "gg_flatiron", "gg_from_hell",
     "gg_fy_new_pool_day", "gg_fy_poolparty_sn", "gg_hideout", "gg_inferno", "gg_italy2_iplay",
     "gg_jaguar_cspgames", "gg_js_object", "gg_klobbmap_cz", "gg_klobbs_iceworld", "gg_kolf",
-    "gg_legend", "gg_mansion_room", "gg_mariocastle_mt", "gg_mini_cbble", "gg_mini_dust2_rmk",
+    "gg_mansion_room", "gg_mini_dust2_rmk",
     "gg_mini_inferno", "gg_o_o", "gg_park", "gg_playground_x_sn", "gg_pool_spacex",
     "gg_pool_suite", "gg_rapidfire", "gg_sand_cz", "gg_scoutzknives_buzzkill", "gg_snow3",
     "gg_snow_dino_rmx", "gg_snow_zona", "gg_snowpool", "gg_speedcastle2", "gg_speedy",
-    "gg_star", "gg_sys_mini_mario", "gg_undermarine", "gg_westwood_mini", "ka_deagle3_sn",
+    "gg_star", "gg_undermarine", "gg_westwood_mini", "ka_deagle3_sn",
     "PortAcabaB002", "small_kingdom_sn", "sp_trash_metal", "war3dm_snow"
 ];
 
